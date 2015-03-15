@@ -130,6 +130,7 @@ typedef struct pt_func_s {
 } pt_func_t ;
 
 /* This should be at the beginning of every protothread function */
+/* gcc has an extension that allows jumping to an arbitrary address */
 #define pt_resume(c) do { if ((c)->pt_func.label) goto *(c)->pt_func.label ; } while (0)
 
 /* This can be used to reset a thread or thread function */

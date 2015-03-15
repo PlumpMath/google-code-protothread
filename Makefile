@@ -1,6 +1,9 @@
 CC = gcc
 LD = gcc
 AR = ar
+# GNU gcc on Mac
+#CC = gcc-4.9
+#LD = gcc-4.9
 CFLAGS = -g -Wall
 
 prefix = /usr/local
